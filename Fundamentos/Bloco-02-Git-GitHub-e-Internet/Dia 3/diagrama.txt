@@ -1,0 +1,11 @@
+ao cliente digitar uma url
+A URL e mandada e traduzida pelo DNS que retorna um endereco do host
+o endereco e mandado junto com outras informacoes
+-protocolo
+-recurso
+-verbo
+em uma requisicao para o servidor
+o servidor processa essas informacoes e as manda para o cliente
+pacotes sao verificados e retornado um status 200 OK
+a resposta chega na maquina do cliente e e interpretada pela engine de renderizacao
+a pagina e carregada
