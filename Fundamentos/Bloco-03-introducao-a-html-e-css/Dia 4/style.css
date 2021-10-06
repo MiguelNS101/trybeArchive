@@ -1,0 +1,67 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    margin: 10px;
+    padding: 10px;
+    border: solid blue;
+    display: block;
+}
+
+main {
+    margin: 10px;
+    padding: 10px;
+    border: solid blue;
+    height: 1600px;
+    display: block;
+    overflow: auto;
+}
+
+footer {
+    margin: 10px;
+    padding: 10px;
+    border: solid blue;
+    display: block;
+}
+
+img {
+    width: 200px;
+    height: 200px;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+nav{
+    margin: 5px;
+    padding: 10px;
+    border: solid blue;
+}
+
+article {
+    margin: 5px;
+    padding: 10px;
+    border: solid blue;
+    display: block;
+    float: left;
+    width: 60%;
+}
+
+section {
+    margin: 10px;
+    padding: 10px;
+    border: solid blue;
+}
+
+aside {
+    display: block;
+    float: right;
+    width: 35%;
+}
+
+iframe {
+    width: 90%;
+    height: auto;
+    margin: 5%;
+}
