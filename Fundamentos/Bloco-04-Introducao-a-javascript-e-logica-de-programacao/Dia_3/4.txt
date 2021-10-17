@@ -1,0 +1,7 @@
+-descobrir se o numero e par ou Impar 
+*par
+-descobrir a metade
+- 2 variaveis uma pra esquerda outra pra direita
+- variaveis = (variavel - 1) descobrir o numero de espacoes em branco
+- somar espaco em branco + "**" + espaco em branco
+-console log da linha
