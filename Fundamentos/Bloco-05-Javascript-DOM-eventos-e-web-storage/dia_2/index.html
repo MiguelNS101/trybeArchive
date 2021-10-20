@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Exercício 5.2</title>
+    <style>
+      section {
+        border-color: black;
+        border-style: solid;
+      }
+
+      .title {
+        text-align: center;
+      }
+
+      .main-content {
+        background-color: yellow;
+      }
+
+      .main-content .center-content {
+        background-color: red;
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .main-content .center-content p {
+        font-style: italic;
+      }
+
+      .main-content .left-content {
+        background-color: green;
+        width: 60%;
+        margin-left: 0;
+        margin-right: auto;
+      }
+
+      .main-content .left-content .small-image {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 100%;
+      }
+
+      .main-content .right-content {
+        background-color: blue;
+        width: 60%;
+        margin-left: auto;
+        margin-right: 0;
+      }
+
+      .main-content .description {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <script>
+      function att1() {
+          let bodyA = document.querySelector('body');
+          let titulo = document.createElement('h1');
+          titulo.innerText = 'Exercício 5.2 - JavaScript DOM';
+          bodyA.appendChild(titulo);
+      }
+      att1()
+
+      function att2() {
+        let bodyA = document.querySelector('body');
+        let createMain = document.createElement('main');
+        createMain.className = 'main-content'
+        bodyA.appendChild(createMain);
+      }
+      att2()
+
+      function att3() {
+        let X = document.querySelector('main');
+        let createSection = document.createElement('section');
+        createSection.className = 'center-content'
+        X.appendChild(createSection);
+      }
+      att3()
+
+      function att4() {
+        let X = document.querySelector('section');
+        let createP = document.createElement('p');
+        createP.innerText = 'texto de teste';
+        X.appendChild(createP);
+      }
+      att4()
+
+      function att5() {
+        let X = document.querySelector('main');
+        let createSection = document.createElement('section');
+        createSection.className = 'left-content'
+        X.appendChild(createSection);
+      }
+      att5()
+
+      function att6() {
+        let X = document.querySelector('main');
+        let createSection = document.createElement('section');
+        createSection.className = 'right-content'
+        X.appendChild(createSection);
+      }
+      att6()
+
+      function att7() {
+        let X = document.querySelector('.left-content');
+        let createImg = document.createElement('img');
+        createImg.className = 'small-image'
+        createImg.src = 'https://picsum.photos/200'
+        X.appendChild(createImg);
+      }
+      att7()
+
+      function att8() {
+        let numList = ['um', 'dois', 'treis', 'quatro', 'cinco', 'seis', 'sete', 'oito', 'nove', 'dez'];
+        for (let i = 0; i < numList.length; i += 1) {
+            let X = document.querySelector('.right-content');
+            let lista = document.createElement('li');
+            lista.innerText = numList[i];
+            X.appendChild(lista);
+        }
+      }
+      att8()
+
+      function att9() {
+        for (let i = 0; i < 3; i += 1) {
+            let bodyA = document.querySelector('main');
+            let hCreate = document.createElement('h3');
+            bodyA.appendChild(hCreate);
+        }
+      }
+      att9()
+
+      //parte 2
+      function att10() {
+        let tituloA = document.querySelector('h1');
+        tituloA.className = 'title'
+      }
+      att10()
+
+      function att11() {
+        let tituloB = document.getElementsByTagName('h3');
+        for (let i = 0; i < 3; i += 1) {
+            tituloB[i].className = 'description';
+        }
+      }
+      att11()
+
+      function att12() {
+        let tituloB = document.getElementsByClassName('left-content')[0];
+        let bodyA = document.querySelector('main');
+        bodyA.removeChild(tituloB);
+      }
+      att12()
+
+      function att13() {
+        let tituloB = document.getElementsByClassName('right-content')[0];
+        tituloB.style.marginRight = 'auto';
+      }
+      att13()
+
+      function att14() {
+        let tituloB = document.getElementsByClassName('center-content ')[0];
+        tituloB.parentElement.style.backgroundColor = 'green';
+      }
+      att14()
+
+      function att15() {
+        let x = document.querySelector('.right-content');
+        x.lastElementChild.remove();
+        x.lastElementChild.remove();
+      }
+      att15()
+    </script>
+  </body>
+</html>
