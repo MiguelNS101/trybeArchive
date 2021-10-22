@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Roboto Mono , monospace;
+}
+
+.header {
+	width: 100%;
+	height: auto;
+	background-color: #3d3d3d;
+}
+
+#titulo {
+	margin: auto auto auto 10px;
+    color: white;
+}
+
+.titulo2 {
+    text-align: center;
+    margin: 5px auto 10px auto;
+    color: #3d3d3d;
+}
+
+.box {
+    margin: 10px;
+    width: auto;
+    padding: 10px;
+	background-color: white; /* Mudar o background */
+    box-shadow: 0 3px 3px #3d3d3d;
+}
+
+.paragrafo {
+    padding: 10px 0px 0px 0px;
+    color: black; /* Cor do texto */
+    font-size: 18px; /* Tamanho da fonte */
+    line-height: 1.6; /* Espacamento entre linhas */
+    font-family: Roboto Mono , monospace; /* Tipo de fonte */
+}
+
+.button {
+    padding: 2px 8px;
+    border-radius: 2px;
+    border: 1px solid #3d3d3d;
+}
