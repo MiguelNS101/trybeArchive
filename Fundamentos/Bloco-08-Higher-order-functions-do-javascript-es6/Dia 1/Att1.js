@@ -1,6 +1,6 @@
 const employeeGenerator = (nomeComp) => {
   const email = nomeComp.toLowerCase().split(' ').join('_');
-  return { nomeComp, email: `${email}@trybe.com` };
+  return {nome: nomeComp, email: `${email}@trybe.com` };
 };
 
 const newEmployees = (empGen) => {
